@@ -26,7 +26,6 @@ function signJwt(username, password) {
         {username}, jwtPassword
     );
     return signature;
-
 }
 
 /**
@@ -55,6 +54,7 @@ function verifyJwt(token) {
  *                         Returns false if the token is not a valid JWT format.
  */
 function decodeJwt(token) {
+    // it is from readme file
     // Write a function that takes a jwt as
     // input and returns true if the jwt can be DECODED (not verified). Return false otherwise
     const decoded = jwt.decode(token);
